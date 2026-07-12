@@ -12,6 +12,12 @@ public class product {
         this.quantity = quantity;
     }
 
+    public product(String nome, double price) {
+        this.name = name;
+        this.price = price;
+        //assim já inicia um ovo produto com a quantidade 0. por padrão, sempre vai ser zero. não precisaria da palavra this.
+    }
+
     public double totalValueInStock() {
         return price * quantity;
     }
